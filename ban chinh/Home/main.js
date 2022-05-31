@@ -164,10 +164,4 @@ window.addEventListener('load', function() {
         sliderContent[index].classList.add('active');
         repeater();
     });
-
-    // const imga = document.querySelectorAll('.slider-item img')
-    // window.addEventListener('scroll', function() {
-    //     let offset = window.pageYOffset;
-    //     console.log(offset);
-    // })
 })

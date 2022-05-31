@@ -113,13 +113,14 @@ img {
 .btn {
     margin-top: 1rem;
     display: inline-block;
-    padding: 0.9rem 3rem;
+    padding: 10px;
     font-size: 1.7rem;
     color: #fff;
     background-color: var(--main-color);
     cursor: pointer;
     text-transform: capitalize;
     border: 1px solid var(--main-color);
+    border-radius: 5px;
 }
 
 .btn:hover {
@@ -534,6 +535,7 @@ hr {
 
 .menu .box-container .box img {
     width: 100%;
+    border-radius: 5px;
 }
 
 .menu .box-container .box h3 {
@@ -697,6 +699,9 @@ hr {
     }
     .menu .box-container .box .price {
         color: var(--black);
+    }
+    .btn {
+        font-size: 20px;
     }
     /* css workshop */
     .workshop .row {
