@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Graduate&family=Merriweather:wght@300&family=Oswald&family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bitter:ital,wght@0,400;0,500;1,300&family=Graduate&family=Merriweather:wght@300&family=Oswald&family=Roboto+Slab:wght@300&family=Roboto:wght@100;300;400;500;700&display=swap");
 :root {
     --main-color: #d3ad7f;
     --black: #13131a;
@@ -218,6 +218,13 @@ img {
 }
 
 
+/* menu-btn */
+
+#menu-btn {
+    display: none;
+}
+
+
 /* css about-us */
 
 .About-us {
@@ -225,11 +232,156 @@ img {
     width: 100%;
     height: 100%;
     margin: 70px auto 0;
-    padding: 20px 0 0;
+    background-color: var(--bg);
+    padding: 20px 0;
 }
 
 .bgimg {
     position: relative;
+}
+
+.about-content-item {
+    position: absolute;
+    top: 4%;
+    width: 53%;
+    padding-left: 2.5rem;
+}
+
+
+/* css about-content-1 */
+
+.about-content-1 {
+    position: relative;
+    top: -7px;
+}
+
+.about-content-1 h1 {
+    position: relative;
+    left: 16%;
+    font-family: "Amatic SC", cursive;
+    font-size: 3rem;
+    word-spacing: 4px;
+}
+
+.about-content-1 p {
+    font-family: "Bitter", serif;
+    font-style: italic;
+    line-height: 36px;
+    font-size: 18px;
+}
+
+.about-content-1 p br {
+    display: none;
+}
+
+.about-content-1 p .id1 {
+    font-style: italic;
+    line-height: 2rem;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.about-content-1 p span {
+    font-family: "Bitter", serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.about-content-1 span {
+    font-family: "Amatic SC", cursive;
+    font-size: 2rem;
+}
+
+
+/* css about-content-2 */
+
+.about-content-2 {
+    position: relative;
+    top: 10rem;
+    left: 111%;
+    width: 540px;
+}
+
+.about-content-2 h1 {
+    position: relative;
+    font-family: "Amatic SC", cursive;
+    font-size: 2rem;
+    top: 10px;
+}
+
+.about-content-2 p {
+    font-family: "Bitter", serif;
+    font-style: italic;
+    line-height: 1.7rem;
+    font-size: 18px;
+}
+
+.about-content-2 p span {
+    font-weight: 500;
+}
+
+.about-content-2 p .id2 {
+    font-family: "Bitter", serif;
+    font-style: italic;
+    line-height: 1.7rem;
+    font-size: 18px;
+}
+
+
+/* css about-content-3 */
+
+.about-content-3 {
+    position: relative;
+    top: 13rem;
+}
+
+.about-content-3 h1 {
+    position: relative;
+    font-family: "Amatic SC", cursive;
+    font-size: 2rem;
+    top: 10px;
+}
+
+.about-content-3 p {
+    font-family: "Bitter", serif;
+    font-style: italic;
+    line-height: 2.7rem;
+    font-size: 18px;
+}
+
+.about-content-3 p br {
+    display: none;
+}
+
+.about-content-3 p span {
+    font-weight: 500;
+}
+
+.about-content-3 p .id3 {
+    font-family: "Bitter", serif;
+    font-style: italic;
+    line-height: 1.7rem;
+    font-size: 18px;
+}
+
+.about-content-3 p .id4 {
+    font-family: "Bitter", serif;
+    font-style: italic;
+    line-height: 1.7rem;
+    font-size: 18px;
+}
+
+.about-content-3 p .id5 {
+    font-family: "Bitter", serif;
+    font-style: italic;
+    line-height: 1.7rem;
+    font-size: 18px;
+    position: relative;
+    left: 89px;
+}
+
+.about-content-3 p .id4 br {
+    display: block;
 }
 
 
@@ -253,4 +405,160 @@ img {
 
 .footer .share a:hover {
     background-color: white;
+}
+
+
+/* media queries */
+
+@media only screen and (max-width: 768px) {
+    #menu-btn {
+        display: inline-block;
+    }
+    /* css header */
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: #fff;
+        width: 15rem;
+        height: calc(100vh - 20rem);
+        border: 2px solid var(--main-color);
+        border-right: none;
+    }
+    .header .navbar.active {
+        right: 0;
+    }
+    .header .navbar a {
+        color: var(--black);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+    .header .navbar a:hover {
+        color: var(--main-color);
+        border-bottom: none;
+    }
+    .header .search-form {
+        width: 90%;
+        right: 2rem;
+        border: 2px solid var(--main-color);
+    }
+    /* css about */
+    img {
+        max-width: none;
+        width: 100%;
+    }
+    .About-us {
+        margin-top: 50px;
+    }
+    .about-content-item {
+        position: absolute;
+        top: 5%;
+        width: 53%;
+        padding-left: 0;
+    }
+    /* css about-content-1 */
+    .about-content-1 {
+        position: relative;
+        top: -3px;
+        width: 358px;
+        left: 10px;
+    }
+    .about-content-1 h1 {
+        position: relative;
+        left: 20%;
+        font-family: "Amatic SC", cursive;
+        font-size: 22px;
+    }
+    .about-content-1 p {
+        font-family: "Bitter", serif;
+        font-style: italic;
+        line-height: 17px;
+        font-size: 15px;
+        position: relative;
+        bottom: 28px;
+    }
+    .about-content-1 p span {
+        font-family: "Bitter", serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        position: relative;
+        top: 0;
+    }
+    .about-content-1 span {
+        font-family: "Amatic SC", cursive;
+        font-size: 18px;
+        position: relative;
+        top: -22px;
+    }
+    .id1 {
+        display: none;
+    }
+    .id2 {
+        display: none;
+    }
+    .about-content-1 p br {
+        display: block;
+    }
+    /* css about-content-2 */
+    .about-content-2 {
+        position: relative;
+        top: -5px;
+        left: 374px;
+        width: 256px;
+    }
+    .about-content-2 h1 {
+        position: relative;
+        font-family: "Amatic SC", cursive;
+        font-size: 17.6px;
+        top: 10px;
+    }
+    .about-content-2 p {
+        font-family: "Bitter", serif;
+        font-style: italic;
+        line-height: 18px;
+        font-size: 14px;
+        position: absolute;
+        top: 37px;
+    }
+    .about-content-2 p span {
+        font-weight: 500;
+    }
+    .about-content-2 p br {
+        display: block;
+    }
+    /* css about-content-3 */
+    .about-content-3 {
+        position: relative;
+        top: 148px;
+        width: 357px;
+        left: 10px;
+    }
+    .about-content-3 h1 {
+        position: relative;
+        font-family: "Amatic SC", cursive;
+        font-size: 25px;
+        top: 5px;
+    }
+    .about-content-3 p {
+        font-family: "Bitter", serif;
+        font-style: italic;
+        line-height: 18px;
+        font-size: 16px;
+        position: absolute;
+        top: 38px;
+    }
+    .id3 {
+        display: none;
+    }
+    .about-content-3 p .id4 {
+        font-family: "Bitter", serif;
+        font-style: italic;
+        line-height: 18px;
+        font-size: 16px;
+        position: relative;
+        left: 50px;
+    }
 }
