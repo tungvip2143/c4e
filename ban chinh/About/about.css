@@ -17,18 +17,35 @@
     transition: 0.2s linear;
 }
 
-body {
+
+/* body {
     background-attachment: fixed;
     background-image: url(Background.jpg);
     background-repeat: repeat-y;
     background-size: 100%;
     background-position: center top;
-}
+} */
 
 html {
     overflow-x: hidden;
     scroll-padding-top: 10px;
     scroll-behavior: smooth;
+    height: 100%;
+    max-height: 600px;
+    width: 100%;
+    background-color: hsla(200, 40%, 30%, 0.4);
+    background-image: url("https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png"), url("https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png"), url("https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png"), url("https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png"), url("https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png");
+    background-repeat: repeat;
+    background-position: 0 20%, 0 100%, 0 50%, 0 100%, 0 0;
+    background-size: 2500px, 800px, 500px 200px, 1000px, 400px 260px;
+    background-size: 100%;
+    animation: 50s para infinite linear;
+}
+
+@keyframes para {
+    100% {
+        background-position: -5000px 20%, -800px 95%, 500px 50%, 1000px 100%, 400px 0;
+    }
 }
 
 label,
@@ -68,7 +85,7 @@ img {
 .header img {
     width: 70px;
     height: auto;
-    margin-right: 50px;
+    margin-right: 76px;
 }
 
 
@@ -135,6 +152,7 @@ img {
     align-items: center;
     transform: scaleY(0);
     transform-origin: top;
+    border: 2px solid var(--main-color);
 }
 
 .search-form.active {
@@ -236,15 +254,11 @@ img {
     padding: 20px 0;
 }
 
-.bgimg {
-    position: relative;
-}
-
 .about-content-item {
     position: absolute;
-    top: 4%;
-    width: 53%;
-    padding-left: 2.5rem;
+    top: 3.894vw;
+    width: 100%;
+    padding-left: 2.537vw;
 }
 
 
@@ -252,33 +266,30 @@ img {
 
 .about-content-1 {
     position: relative;
-    top: -7px;
+    width: 43.658vw;
+}
+
+.about-content-1:hover {
+    background: rgba(27, 16, 16, 0.707);
+    color: var(--main-color);
+    text-shadow: 10px 10px 10px var(--main-color);
 }
 
 .about-content-1 h1 {
     position: relative;
-    left: 16%;
+    left: 6.372vw;
     font-family: "Amatic SC", cursive;
-    font-size: 3rem;
-    word-spacing: 4px;
+    font-size: 2.655vw;
+    top: -0.59vw;
 }
 
 .about-content-1 p {
     font-family: "Bitter", serif;
     font-style: italic;
-    line-height: 36px;
-    font-size: 18px;
-}
-
-.about-content-1 p br {
-    display: none;
-}
-
-.about-content-1 p .id1 {
-    font-style: italic;
-    line-height: 2rem;
-    font-size: 18px;
-    font-weight: normal;
+    line-height: 2.124vw;
+    font-size: 1.062vw;
+    position: relative;
+    top: -1.534vw;
 }
 
 .about-content-1 p span {
@@ -289,99 +300,79 @@ img {
 
 .about-content-1 span {
     font-family: "Amatic SC", cursive;
-    font-size: 2rem;
+    font-size: 1.475vw;
+    position: relative;
+    top: -1.357vw;
 }
 
 
 /* css about-content-2 */
 
 .about-content-2 {
-    position: relative;
-    top: 10rem;
-    left: 111%;
-    width: 540px;
+    position: absolute;
+    top: 38.9vw;
+    left: 48.614vw;
+    width: 32.743vw;
+}
+
+.about-content-2:hover {
+    background: rgba(81, 81, 81, 0.707);
+    color: var(--main-color);
+    text-shadow: 10px 10px 10px var(--main-color);
 }
 
 .about-content-2 h1 {
     position: relative;
     font-family: "Amatic SC", cursive;
-    font-size: 2rem;
-    top: 10px;
+    font-size: 2.065vw;
+    top: 0.59vw;
 }
 
 .about-content-2 p {
     font-family: "Bitter", serif;
     font-style: italic;
-    line-height: 1.7rem;
-    font-size: 18px;
+    line-height: 1.652vw;
+    font-size: 1.062vw;
 }
 
 .about-content-2 p span {
-    font-weight: 500;
-}
-
-.about-content-2 p .id2 {
     font-family: "Bitter", serif;
-    font-style: italic;
-    line-height: 1.7rem;
-    font-size: 18px;
+    font-weight: 700;
 }
 
 
 /* css about-content-3 */
 
 .about-content-3 {
-    position: relative;
-    top: 13rem;
+    position: absolute;
+    top: 64.602vw;
+    width: 43.658vw;
+}
+
+.about-content-3:hover {
+    background: rgba(13, 74, 52, 0.707);
+    color: var(--bg);
+    text-shadow: 10px 10px 10px var(--bg);
 }
 
 .about-content-3 h1 {
     position: relative;
     font-family: "Amatic SC", cursive;
-    font-size: 2rem;
-    top: 10px;
+    font-size: 2.065vw;
+    top: -0.4vw;
 }
 
 .about-content-3 p {
     font-family: "Bitter", serif;
     font-style: italic;
-    line-height: 2.7rem;
-    font-size: 18px;
-}
-
-.about-content-3 p br {
-    display: none;
+    line-height: 2.36vw;
+    font-size: 1.062vw;
+    position: relative;
+    top: -1.475vw;
 }
 
 .about-content-3 p span {
     font-weight: 500;
-}
-
-.about-content-3 p .id3 {
-    font-family: "Bitter", serif;
-    font-style: italic;
-    line-height: 1.7rem;
-    font-size: 18px;
-}
-
-.about-content-3 p .id4 {
-    font-family: "Bitter", serif;
-    font-style: italic;
-    line-height: 1.7rem;
-    font-size: 18px;
-}
-
-.about-content-3 p .id5 {
-    font-family: "Bitter", serif;
-    font-style: italic;
-    line-height: 1.7rem;
-    font-size: 18px;
-    position: relative;
-    left: 89px;
-}
-
-.about-content-3 p .id4 br {
-    display: block;
 }
 
 
@@ -394,12 +385,12 @@ img {
 }
 
 .footer .share a {
-    height: 5rem;
-    width: 5rem;
-    line-height: 5rem;
-    font-size: 2rem;
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
     color: var(--black);
-    margin: 0.3rem;
+    margin: 0.2rem 1rem;
     border-radius: 50%;
 }
 
@@ -442,123 +433,5 @@ img {
     .header .search-form {
         width: 90%;
         right: 2rem;
-        border: 2px solid var(--main-color);
-    }
-    /* css about */
-    img {
-        max-width: none;
-        width: 100%;
-    }
-    .About-us {
-        margin-top: 50px;
-    }
-    .about-content-item {
-        position: absolute;
-        top: 5%;
-        width: 53%;
-        padding-left: 0;
-    }
-    /* css about-content-1 */
-    .about-content-1 {
-        position: relative;
-        top: -3px;
-        width: 358px;
-        left: 10px;
-    }
-    .about-content-1 h1 {
-        position: relative;
-        left: 20%;
-        font-family: "Amatic SC", cursive;
-        font-size: 22px;
-    }
-    .about-content-1 p {
-        font-family: "Bitter", serif;
-        font-style: italic;
-        line-height: 17px;
-        font-size: 15px;
-        position: relative;
-        bottom: 28px;
-    }
-    .about-content-1 p span {
-        font-family: "Bitter", serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        position: relative;
-        top: 0;
-    }
-    .about-content-1 span {
-        font-family: "Amatic SC", cursive;
-        font-size: 18px;
-        position: relative;
-        top: -22px;
-    }
-    .id1 {
-        display: none;
-    }
-    .id2 {
-        display: none;
-    }
-    .about-content-1 p br {
-        display: block;
-    }
-    /* css about-content-2 */
-    .about-content-2 {
-        position: relative;
-        top: -5px;
-        left: 374px;
-        width: 256px;
-    }
-    .about-content-2 h1 {
-        position: relative;
-        font-family: "Amatic SC", cursive;
-        font-size: 17.6px;
-        top: 10px;
-    }
-    .about-content-2 p {
-        font-family: "Bitter", serif;
-        font-style: italic;
-        line-height: 18px;
-        font-size: 14px;
-        position: absolute;
-        top: 37px;
-    }
-    .about-content-2 p span {
-        font-weight: 500;
-    }
-    .about-content-2 p br {
-        display: block;
-    }
-    /* css about-content-3 */
-    .about-content-3 {
-        position: relative;
-        top: 148px;
-        width: 357px;
-        left: 10px;
-    }
-    .about-content-3 h1 {
-        position: relative;
-        font-family: "Amatic SC", cursive;
-        font-size: 25px;
-        top: 5px;
-    }
-    .about-content-3 p {
-        font-family: "Bitter", serif;
-        font-style: italic;
-        line-height: 18px;
-        font-size: 16px;
-        position: absolute;
-        top: 38px;
-    }
-    .id3 {
-        display: none;
-    }
-    .about-content-3 p .id4 {
-        font-family: "Bitter", serif;
-        font-style: italic;
-        line-height: 18px;
-        font-size: 16px;
-        position: relative;
-        left: 50px;
     }
 }
